@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TriviaGame</title>
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+
+</head>
+<body>
+
+    <!--Title-->
+<h1 class="header">Soccer Trivia</h1>
+<h2 class="subheader">Manchester United Soccer Trivia</h2>
+
+
+<!--Main section of site-->
+<div class="contailer-fluid">
+
+<!--Directions-->
+<div class="row">
+     <div class= "col-sm-12 directions">Try and answer the below questions before </div>
+
+<!--Question and buttons section-->
+    <div class="container">
+
+<!--Button to start Timer-->
+<button id="start-button">Start Quiz</button>       
+
+<!--Timer-->        
+    <div id="time-left"></div>
+
+    <p>Who is the most sucessful manager in Manchester United History?</p>
+    <form>
+        <label class="radio-inline">
+        <input type="radio" value="Sir Alex Ferguson" name="coaches">Sir Alex Ferguson
+        </label>
+        <label class="radio-inline">
+        <input type="radio" value="Sir Matt Bubsby" name="coaches">Sir Matt Bubsby
+        </label>
+        <label class="radio-inline">
+        <input type="radio" value="Jose Mourinho" name="coaches">Jose Mourinho
+        </label>
+    </form>
+    <p>How many times has Manchester United won the Premier League?</p>
+    <form>
+        <label class="radio-inline">
+        <input type="radio" value="12" name="trophies">12
+        </label>
+        <label class="radio-inline">
+        <input type="radio" value="20" name="trophies">20
+        </label>
+        <label class="radio-inline">
+        <input type="radio" value="8" name="trophies">8
+        </label>
+    </form>
+    <p>Who was Manchester Uniteds most expensive signing?</p>
+    <form>
+        <label class="radio-inline">
+        <input type="radio" value="Angel" name="player">Angel Dimaria
+        </label>
+        <label class="radio-inline">
+        <input type="radio" value="Cristiano" name="player">Cristiano Ronaldo
+        </label>
+        <label class="radio-inline">
+        <input type="radio" value="Paul" name="player">Paul Pogba
+        </label>
+    </form>
+
+
+    <button id="button">Submit Answers</button>
+    </div>
+
+<!--Score of current game being played-->
+<div class="row">
+        <div class="col-sm-4 correct">Correct:</div>
+</div>
+<div class="row">
+    <div class="col-sm-4 incorrect">Incorrect:</div>
+</div>
+
+</div>
+
+ <!-- J Query Link-->
+ <script
+ src="https://code.jquery.com/jquery-3.3.1.min.js"
+ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
+
+<!-- Javacript Link-->
+<script type="text/javascript" src="./assets/app.js"></script>
+
+ 
+
+</body>
+
+
+</html>
