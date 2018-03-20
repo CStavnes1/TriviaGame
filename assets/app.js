@@ -3,21 +3,19 @@
 
 //Timer for quiz
 
-//  setTimeout(fifteenSeconds, 1000 *15);
-//  setTimeout(timeUp, 1000 * 30);
-
-let count=3;
+let count=60;
 
 let secTimer= setInterval(timer, 1000);
 
 function timer() {
     count = count-1;
+    console.log(count)
     if (count <= 0) {
         
         clearInterval(secTimer);
-        
+        console.log(count)
         //counter ended do stuff here
-        alert("Time is up, let's see how you did!")
+        alert("Time's Up! Submit your answers below to see your results!")
 
     }
     $("#time-left").text(count + " secs")
@@ -78,10 +76,37 @@ $( "#button" ).on( "click", function() {
         incorrectCounter++;
     }
     
-    
+    let answer4 = $("input[name='goals']:checked").val();
 
+    if (answer4 === "Wayne Rooney") {
+       
+        correctCounter++;
+
+    } else {
+        
+        incorrectCounter++;
+    }
+
+    let answer5 = $("input[name='notplayer']:checked").val();
+
+    if (answer5 === "Lionel Messi") {
+       
+        correctCounter++;
+
+    } else {
+        
+        incorrectCounter++;
+    }
+    
+    //dislaying scores and displaying aswers
     $(".correct").append(correctCounter)
     $(".incorrect").append(incorrectCounter)
+    
+    $(".first").append('<p>Correct Answer: Sir Alex Ferguson</p>')
+    $(".second").append('<p>Correct Answer: 20</p>')
+    $(".third").append('<p>Correct Answer: Paul Pogba</p>')
+    $(".fourth").append('<p>Correct Answer: Wayne Rooney</p>')
+    $(".fifth").append('<p>Correct Answer: Lionel Messi</p>')
 
 
     });

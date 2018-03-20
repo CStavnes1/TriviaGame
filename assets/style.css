@@ -1,7 +1,70 @@
 body {
-    background-color: red;
+    background-color: #e90b19;
 }
 
 .col-sm-4 {
     margin-left: 5%;
+}
+
+h1, h2 { 
+    /* background-image: url("./assets/crestimage.png") */
+    background-color: black;
+    text-align: center;
+    color: white;
+    
+}
+
+.radio-inline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+}
+
+.first, .second, .third, .fourth, .fifth {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    
+}
+
+#button {
+    margin: 2%;
+}
+
+.scoreboard {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+}
+
+.scoreboard2 {
+    background-color: black;
+    color: white;
+    border: solid 2px black;
+}
+
+img {
+    text-align: center;
+    border: solid 2px black;
+    padding: 5px;
+    background-color: white;
+}
+
+.directions1 {
+    color: black;
+    background-color: white;
+    border: solid 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.timer {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bold
 }
